@@ -9,8 +9,10 @@
 
 // here we use the type annotation to define the type of variable
 // core data types in ts are number , string , boolean
-function add (num1 :number , num2 :number) {  // :number  is use for type annotation
-    return num1 + num2;
+function add (num1 :number , num2 :number ,bo :boolean , str :string) {  // :number  is use for type annotation
+    if (bo) {
+        return `${str} ${num1 + num2}`; 
+    }
 }
-const result = add (5, 10);
+const result = add (5, 10, true,"add two number");
 console.log(result);

@@ -7,8 +7,10 @@
 // now the same code using ts
 // here we use the type annotation to define the type of variable
 // core data types in ts are number , string , boolean
-function add(num1, num2) {
-    return num1 + num2;
+function add(num1, num2, bo, str) {
+    if (bo) {
+        return "".concat(str, " ").concat(num1 + num2);
+    }
 }
-var result = add(5, 10);
+var result = add(5, 10, true, "add two number");
 console.log(result);
