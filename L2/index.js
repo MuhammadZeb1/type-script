@@ -49,7 +49,7 @@
 var str = ["kkkkkkk", "jsfhsuhwue", 3853]; // any treat the like the javascript and loose the ts power
 // console.log(person1.arr[0])
 // tuple
-// to define the fised array of one more types
+// to define the fixed array of one more types
 var arrNum = [2, "oooo"];
 // console.log(arrNum)
 var Role;
@@ -60,6 +60,13 @@ var Role;
 })(Role || (Role = {}));
 ; // 
 console.log(Role.READ_USER_ONLY);
+var Names;
+(function (Names) {
+    Names[Names["Sakib"] = 0] = "Sakib";
+    Names[Names["Rahim"] = 2] = "Rahim";
+    Names[Names["Karim"] = 3] = "Karim";
+})(Names || (Names = {}));
+console.log(Names[2]);
 var person = {
     name: "patel",
     age: 21,
@@ -99,3 +106,6 @@ var Status;
 })(Role || (Role = {}));
 var myRole = Role.Admin;
 // console.log(myRole); // Output: ADMIN
+var number = [];
+number[0] = 3;
+console.log(number);

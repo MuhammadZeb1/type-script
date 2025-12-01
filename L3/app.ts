@@ -1,7 +1,10 @@
 // union ,literal type , type alias(surtom type)
 // console.log("khan")
 
-//! union (|)
+// 1️⃣ Union Type
+    // A union type allows a variable to hold more than one type.
+
+
 // ! we  use unoin for combine the tyes (| pipe in ts)
 // function combine (num1:number|string, num2 :number|string){
 // if (typeof num1 === "number" && typeof num2 === "number") {
@@ -14,7 +17,9 @@
 
 // combine("name","  muhammad")
 
-// literal (|)
+// 2️⃣ Literal Type
+
+//     A literal type restricts a variable to exactly one or more specific values.
 
 // function combine (num1, num2  ,con :"number"|"string"){
 // if (typeof num1 === "number" && typeof num2 === "number" || con === "number") {
@@ -45,7 +50,9 @@
 // console.log(sum1, sum2, combinedName);
 
 
-// / // TYPE ALIAS / CUSTOM TYPES
+// 3️⃣ Type Alias (Custom Type)
+
+// A type alias allows you to create a new name for a type, making your code cleaner and reusable.
 
 type Combinable = number | string;
 type ConversionType = "as-number" | "as-string";

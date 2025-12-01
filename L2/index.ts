@@ -59,7 +59,7 @@ const str : any[] = ["kkkkkkk","jsfhsuhwue" ,3853] // any treat the like the jav
 // console.log(person1.arr[0])
 
 // tuple
-// to define the fised array of one more types
+// to define the fixed array of one more types
 const arrNum : [number,string] = [2,"oooo"]
 
 // console.log(arrNum)
@@ -67,6 +67,22 @@ const arrNum : [number,string] = [2,"oooo"]
 enum Role {ADMIN, AUTHOR, READ_USER_ONLY};// 
 
 console.log(Role.READ_USER_ONLY)
+enum Names {
+  Sakib = 0,
+  Rahim = 2,
+  Karim = 3, // next value automatically becomes 3
+}
+
+console.log(Names[2])
+enum Role2 {
+  Admin = "admin",
+  User = "user",
+}
+Role["admin"];  // ❌ NOT possible
+
+let arr: number[] = []; 
+arr[0] = 5;
+
 
 
 const person = {
@@ -112,3 +128,7 @@ enum Role {
 
 let myRole: Role = Role.Admin;
 // console.log(myRole); // Output: ADMIN
+
+let number :number[] =[]; 
+number[0]=3
+console.log(number)
