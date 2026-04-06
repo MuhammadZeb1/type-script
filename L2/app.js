@@ -9,11 +9,24 @@
 // }
 // console.log(person.name)
 //! array 
-var arr = ["ali", "khan "];
-// array inside obj
-var person = {
-    name: "khan ",
-    address: 12,
-    arr: ["ali", "khan "]
-};
-console.log(person.arr);
+// const arr:string[]=["ali","khan "]
+// // array inside obj
+//  const person: {
+//     name :string;
+//     address: number
+//     // arr :string[]  // basic array
+//     // arr :Array<string> // generic array
+//     // arr :(string|number)[]  // union type array or mixed array
+//     // arr :readonly string[]  // readonly array or immutable array
+//     arr:any[]  // any type array
+// }={
+//     name:"khan ",
+//     address:12,
+//     arr:["ali","khan "]
+// }
+// console.log(person.arr)
+// const name :[number, string] = [12,"ali"]
+// JavaScript/TypeScript mein name already ek global property hoti hai
+//  (browser environment mein), jo window.name se related hoti hai.
+var khan = [12, "ali"];
+console.log(khan);
