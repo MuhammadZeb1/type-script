@@ -20,14 +20,19 @@ const arr:string[]=["ali","khan "]
  const person: {
     name :string;
     address: number
-    arr :string[]
+    // arr :string[]  // basic array
+    // arr :Array<string> // generic array
+    // arr :(string|number)[]  // union type array or mixed array
+    // arr :readonly string[]  // readonly array or immutable array
+
+    arr:any[]  // any type array
 }={
     name:"khan ",
     address:12,
-    arr:["ali"]
+    arr:["ali","khan "]
 }
 
-person.arr[9]="khan"
+
 console.log(person.arr)
 
 

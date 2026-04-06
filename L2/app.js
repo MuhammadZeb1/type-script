@@ -14,7 +14,6 @@ var arr = ["ali", "khan "];
 var person = {
     name: "khan ",
     address: 12,
-    arr: ["ali"]
+    arr: ["ali", "khan "]
 };
-person.arr[9] = "khan";
 console.log(person.arr);
