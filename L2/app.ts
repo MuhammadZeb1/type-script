@@ -38,5 +38,5 @@
 // JavaScript/TypeScript mein name already ek global property hoti hai
 //  (browser environment mein), jo window.name se related hoti hai.
 
-let  khan :[number, string] = [12,"ali"]
+let  khan :[number, string] = [12,"ali"];
 console.log(khan);
