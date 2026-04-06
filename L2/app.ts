@@ -38,5 +38,16 @@
 // JavaScript/TypeScript mein name already ek global property hoti hai
 //  (browser environment mein), jo window.name se related hoti hai.
 
-let  khan :[number, string] = [12,"ali"];
-console.log(khan);
+// let  khan :[number, string] = [12,"ali"];
+// console.log(khan);
+
+
+// enum
+
+enum naam {
+    ali = "first name" ,
+     khan = "last name" ,
+      ahmed = "middle name" , mohammed = "full name"
+}
+
+console.log(naam.ali)
