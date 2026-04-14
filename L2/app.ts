@@ -44,10 +44,10 @@
 
 // enum
 
-enum naam {
-    ali = "first name" ,
-     khan = "last name" ,
-      ahmed = "middle name" , mohammed = "full name"
-}
+// enum naam {
+//     ali = "first name" ,
+//      khan = "last name" ,
+//       ahmed = "middle name" , mohammed = "full name"
+// }
 
 console.log(naam.ali)
