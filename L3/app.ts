@@ -18,7 +18,25 @@ person = 12
 
 
 // literal type
-function add (num:number | string, num1:number | string, conversion: "as-number" | "as-string"){
+// function add (num:number | string, num1:number | string, conversion: "as-number" | "as-string"){
+//     if (conversion === "as-number") {
+//         console.log(+num+ +num1)  
+//     } 
+//     else if (conversion === "as-string") {
+//         console.log(num.toString() + num1.toString())  
+//     }
+//     else {
+//         console.log("both parameters should be numbers")
+//     }
+// }
+// add("23",4,"as-number")
+// add("ali"," khan","as-string")
+
+// type alias
+type Conversion = "as-number" | "as-string"
+
+type Combinable = number | string
+function add (num:Combinable, num1:Combinable, conversion: Conversion){
     if (conversion === "as-number") {
         console.log(+num+ +num1)  
     } 
@@ -29,5 +47,28 @@ function add (num:number | string, num1:number | string, conversion: "as-number"
         console.log("both parameters should be numbers")
     }
 }
-add("23",4,"as-number")
-add("ali"," khan","as-string")
+// add("23",4,"as-number")
+// add("ali"," khan","as-string")
+
+
+type User = {
+    name : string,
+    age : number,
+    hobbies : string[],
+    role : [number,string]
+}
+const user1 : User = {
+    name:"ali khan",
+    age:12,
+    hobbies:["cricket","coding"],
+    role:[1,"author"]
+}
+
+
+function printUser(user: User){
+    console.log(user.name)
+    console.log(user.age)
+    console.log(user.hobbies)
+    console.log(user.role)
+}
+printUser(user1)
