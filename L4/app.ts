@@ -12,3 +12,20 @@ console.log(add(23,4))
 // we can use the ( string, number , boolean , void , never , unknown ) as return type of function
 
 // void return type
+
+
+// bad pratices 
+
+let com :Function;
+
+// com = 10 // not valid
+com = ( a:number,b:number):number=>{
+    return a+b
+}  // valid 
+// com = add // valid
+
+
+console.log(com(2,2))
+ 
+
+
