@@ -29,7 +29,7 @@
 // An access modifier controls where you can use (access) class properties and methods.
 class Person {
     name :string;
-    employe :string[]
+    private employe :string[]
     constructor (str :string){
         this.name = str
         this.employe = []
