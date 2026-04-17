@@ -7,8 +7,20 @@
 // let a : unknown = 10
 
 
-let b : string= a;
+// let b : string= a;
 
 
-console.log(typeof a);
-console.log(typeof b);
+// console.log(typeof a);
+// console.log(typeof b);
+
+function err (message : string) : never {
+    throw new Error(message);
+
+    // console.log("khan")
+}
+
+err("this is an error")
+
+// never reaches the end
+// never returns anything
+// always crashes ❌

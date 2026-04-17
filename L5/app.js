@@ -1,5 +1,12 @@
 //  any , unknown , never , void
-var a = 10;
-var b = a;
-console.log(typeof a);
-console.log(typeof b);
+// any → TypeScript blind ho jata hai
+// let a : any = 10
+// unknown → TypeScript careful ho jata hai 🔍
+// let a : unknown = 10
+// let b : string= a;
+// console.log(typeof a);
+// console.log(typeof b);
+function err(message) {
+    throw new Error(message);
+}
+err("this is an error");
