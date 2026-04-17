@@ -1,3 +1,7 @@
+// Classes in TypeScript
+
+// class → blueprint for creating objects
+// object → instance of a class
 class Person {
     name :string;
     constructor (str :string){
